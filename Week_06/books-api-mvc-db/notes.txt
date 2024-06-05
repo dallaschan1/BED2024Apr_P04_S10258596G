@@ -1,0 +1,30 @@
+String
+Joi.string(): Specifies that the value should be a string.
+Joi.string().min(length): Specifies the minimum length of the string.
+Joi.string().max(length): Specifies the maximum length of the string.
+Joi.string().email(): Specifies that the string should be a valid email.
+Joi.string().regex(pattern): Specifies that the string should match a given regular expression.
+Joi.string().alphanum(): Specifies that the string should only contain alphanumeric characters.
+Joi.string().uuid(): Specifies that the string should be a valid UUID.
+Number
+Joi.number(): Specifies that the value should be a number.
+Joi.number().integer(): Specifies that the number should be an integer.
+Joi.number().min(value): Specifies the minimum value.
+Joi.number().max(value): Specifies the maximum value.
+Date
+Joi.date(): Specifies that the value should be a date.
+Joi.date().iso(): Specifies that the date should be in ISO format.
+Array
+Joi.array(): Specifies that the value should be an array.
+Joi.array().items(type): Specifies the types of items that the array should contain.
+Joi.array().min(length): Specifies the minimum number of items in the array.
+Joi.array().max(length): Specifies the maximum number of items in the array.
+Object
+Joi.object(): Specifies that the value should be an object.
+Joi.object().keys(schema): Specifies the schema of the object.
+Boolean
+Joi.boolean(): Specifies that the value should be a boolean.
+Customizing Error Messages
+Joi.any().required(): Specifies that the value is required.
+Joi.any().default(value): Specifies a default value.
+Joi.any().valid(...values): Specifies a set of valid values.
